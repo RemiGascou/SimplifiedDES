@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 ##SDES implementation
 
 from lib import *

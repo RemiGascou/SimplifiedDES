@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from lib.left_circular_shift import *
 from lib.pboxes import *
 

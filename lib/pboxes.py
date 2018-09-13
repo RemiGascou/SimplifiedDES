@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def p8(data, table=[6,3,7,4,8,5,10,9]):
     if len(data) == 10:
         return ''.join([data[k-1] for k in table])

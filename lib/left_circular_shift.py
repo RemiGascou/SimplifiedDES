@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def left_circular_shift(data, shift):              #Left Circular Shift
     shift = shift%len(data)
     return data[len(data)-shift:] + data[:len(data)-shift]

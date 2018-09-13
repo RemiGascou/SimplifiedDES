@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from lib.keygen import *
 from lib.initial_permutation import *
 from lib.fk import *

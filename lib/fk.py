@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from lib.expander import *
 from lib.sboxes import *
 from lib.pboxes import *

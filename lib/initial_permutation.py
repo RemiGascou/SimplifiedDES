@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def initial_permutation(data, table=[2,6,3,1,4,8,5,7]):                         #Testé à la main, OK
     print("[ IP ] Entering initial_permutation with data :", data)
     if len(data) == 8:

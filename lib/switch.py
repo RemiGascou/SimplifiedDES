@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def switch(data):
     print("[ SW ] Entering switch with data :", data)
     if len(data) == 8:
