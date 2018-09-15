@@ -13,3 +13,6 @@ def initial_permutation_reverse(data, table=[4,1,3,5,7,2,8,6]):                 
         print("[IP-1] Leaving initial_permutation_reverse with data  :", ''.join([data[k-1] for k in table]))
         return ''.join([data[k-1] for k in table])
     return None
+    
+if __name__ == """__main__""":
+    pass
