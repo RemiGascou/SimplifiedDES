@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
-def left_circular_shift(data, shift):              #Left Circular Shift
+def left_circular_shift(data, shift):
     shift = shift%len(data)
-    return data[len(data)-shift:] + data[:len(data)-shift]
+    #return data[len(data)-shift:] + data[:len(data)-shift] <- Right Circular Shift
+    return data[shift:len(data)] + data[:shift]
 
 if __name__ == """__main__""":
     print(lcs([1,2,3,4,5,6,7,8,9], 2))

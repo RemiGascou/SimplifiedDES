@@ -9,7 +9,7 @@ def SDES_encrypt(message, key):
     subkey1, subkey2 = keygen(key)
     buffer = initial_permutation(message)
     buffer = fk(buffer, subkey1)
-    switch(buffer)
+    buffer = switch(buffer)
     buffer = fk(buffer, subkey2)
     cipher = initial_permutation_reverse(buffer)
     return cipher
@@ -18,7 +18,7 @@ def SDES_decrypt(cipher, key):
     subkey1, subkey2 = keygen(key)
     buffer = initial_permutation_reverse(cipher)
     buffer = fk(buffer, subkey2)
-    switch(buffer)
+    buffer = switch(buffer)
     buffer = fk(buffer, subkey1)
     message = initial_permutation(buffer)
     return message

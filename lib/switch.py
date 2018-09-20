@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 
-def switch(data):
-    print("[ SW ] Entering switch with data :", data)
+def switch(data, verbose = False):
+    if verbose:
+        print("[ SW ] Entering switch with data :", data)
     if len(data) == 8:
-        print("[ SW ] Leaving switch with data  :", data[int(len(data)/2):] + data[:int(len(data)/2)])
+        if verbose:
+            print("[ SW ] Leaving switch with data  :", data[int(len(data)/2):] + data[:int(len(data)/2)])
         return data[int(len(data)/2):] + data[:int(len(data)/2)]
     return None
 
